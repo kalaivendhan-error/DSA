@@ -12,7 +12,6 @@ class Stack{
         }
         this.arr[++this.top]=value
         console.log(`${value} pushed`)
-        // console.log(this.top)
     }
 
     poping(){
@@ -47,6 +46,7 @@ class Stack{
 }
 
 var stack =new Stack(5)
+console.log(stack.isEmpty())
 stack.pushing(1)
 stack.pushing(2)
 stack.pushing(3)
@@ -55,8 +55,7 @@ stack.pushing(5)
 stack.pushing(6)
 
 stack.poping()
-// stack.isEmpty()
-
+console.log(stack.isEmpty())
 stack.peek()
 
 

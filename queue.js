@@ -73,59 +73,59 @@
 
 
 
-                //Queue implementaton is Object
-// class Queue{
-//     constructor(){
-//         this.items={}
-//         this.front=0
-//         this.rear=0
-//     }
+                // Queue  implementaton is Object
+class Queue{
+    constructor(){
+        this.items={}
+        this.front=0
+        this.rear=0
+    }
 
-//     enqueue(value){
-//         this.items[this.rear]=value
-//         this.rear++
-//         console.log(`${value} added in queue`)
-//     }
+    enqueue(value){
+        this.items[this.rear]=value
+        this.rear++
+        console.log(`${value} added in queue`)
+    }
 
-//     dequeue(){
-//         if(this.rear==this.front){
-//             console.log('failed !!!, Queue is empty')
-//             return
-//         }
-//         console.log(`${this.items[this.front]} removed from the queue`)
-//         delete this.items[this.front]
-//         this.front++
-//     }
+    dequeue(){
+        if(this.rear==this.front){
+            console.log('failed !!!, Queue is empty')
+            return
+        }
+        console.log(`${this.items[this.front]} removed from the queue`)
+        delete this.items[this.front]
+        this.front++
+    }
 
-//     isEmpty(){
-//         return this.front==this.rear
-//     }
+    isEmpty(){
+        return this.front==this.rear
+    }
 
-//     first(){
-//         if(this.rear==this.front){
-//             console.log('Queue is empty')
-//             return null;
-//         }
-//         return this.items[this.front]
-//     }
+    first(){
+        if(this.rear==this.front){
+            console.log('Queue is empty')
+            return null;
+        }
+        return this.items[this.front]
+    }
 
-//     size(){
-//         return this.rear-this.front
-//     }
-// }
+    size(){
+        return this.rear-this.front
+    }
+}
 
-// const queue=new Queue()
-// console.log(queue.isEmpty())
+const queue=new Queue()
+console.log(queue.isEmpty())
 
-// queue.enqueue(10)
-// queue.enqueue(20)
+queue.enqueue(10)
+queue.enqueue(20)
 
-// console.log(queue.size())
-// console.log(queue.first())
+console.log(queue.size())
+console.log(queue.first())
 
-// console.log(queue.isEmpty())
+console.log(queue.isEmpty())
 
-// queue.dequeue()
-// queue.dequeue()
+queue.dequeue()
+queue.dequeue()
 
-// console.log(queue)
+console.log(queue)

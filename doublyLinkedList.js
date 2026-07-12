@@ -159,14 +159,6 @@ class DoublyLinkedList{
                 curr_node=curr_node.prev  //to be remembered
                 next_node=next_node.prev
             }
-            
-            // curr_node.next=null
-            // curr_node.prev=next_node
-            // if(!next_node.next){
-            //     this.head=next_node
-            // }
-            // next_node.next=curr_node
-            // curr_node.prev=upComing_Node
         }
     }
 
@@ -211,21 +203,11 @@ class DoublyLinkedList{
 
 const dll=new DoublyLinkedList
 
-// dll.prepand(10)
-// dll.prepand(20)
-// dll.appand(40)
-// dll.prepand(30)
-
-// dll.deleteValue(20)
-// dll.deleteValue(10)
 dll.insert(0,10)
 dll.insert(0,20)
 dll.insert(0,30)
 dll.insert(3,5)
-// dll.remove(3)
-// dll.remove(1)
-// dll.remove(1)
-// dll.remove(1)
+
 dll.print()
 console.log(dll.first())
 console.log(dll.last())
